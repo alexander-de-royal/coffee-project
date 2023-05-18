@@ -31,9 +31,9 @@ let coffees = [
 //Tables are a little old school, you need to refactor the code so that each coffee is displayed in a div that contains a heading displaying the coffee name, and the type of roast in a paragraph. Don't display the ids, these are only for our application's internal use
 function renderCoffee(coffee){
     let html = '<div class="coffee">';
-        html += '<p>' + coffee.id + '</p>';
+        // html += '<p>' + coffee.id + '</p>';
         html += '<h1>' + coffee.name + '</h1>';
-        html += '<p>' + coffee.name + '</p>';
+        html += '<p>' + coffee.roast + '</p>';
         html += '</div>';
         return html;
 }

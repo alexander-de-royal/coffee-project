@@ -1,100 +1,122 @@
-*{
-    box-sizing: border-box;
+.gif{
+    width: 80px;
+    height: 60px;
+    margin-bottom: 40px;
 }
-h1{
-    text-align: center;
+.navbar{
+    font-family: "Corsiva Hebrew";
+    font-size: 1.3rem;
 }
-.container{
-    border: 1px solid red;
+.navbar-brand{
+    font-size: 2rem;
 }
-table {
-    /*align-items: center;*/
-    /*border-collapse: collapse;*/
-    /*border-radius: 10px;*/
-    /*margin: 15px 0;*/
+.nav-item{
+    margin-left: 30px;
 }
-body{
-    /*background-color: red;*/
-}
-
-th, td {
-    border: 1px solid black;
-    /*width: 20px;*/
-    /*height: 20px;*/
-    border-radius: 5px;
-    padding: 5px 10px;
-}
-.col-left{
-    border: 1px solid green;
-}
-.col-right{
-    border: 1px solid blue;
-}
-
+/**{*/
+/*    box-sizing: border-box;*/
+/*}*/
+/*h1{*/
+/*    !*text-align: left;*!*/
+/*}*/
+/*p{*/
+/*    !*text-align: left;*!*/
+/*}*/
+/*.container{*/
+/*    border: 1px solid red;*/
+/*}*/
 /*table {*/
-/*      border-collapse: separate !important;*/
-/*      border-spacing: 0;*/
-/*      width: 600px;*/
-/*      margin: 30px;*/
-/*  }*/
-/*.coffee {*/
-/*    border: solid #ccc 1px;*/
-/*    -moz-border-radius: 6px;*/
-/*    -webkit-border-radius: 6px;*/
-/*    border-radius: 6px;*/
-/*    -webkit-box-shadow: 0 1px 1px #ccc;*/
-/*    -moz-box-shadow: 0 1px 1px #ccc;*/
-/*    box-shadow: 0 1px 1px #ccc;*/
+/*    !*align-items: center;*!*/
+/*    !*border-collapse: collapse;*!*/
+/*    !*border-radius: 10px;*!*/
+/*    !*margin: 15px 0;*!*/
+/*    !*border-collapse: separate !important;*!*/
+/*    !*border-spacing: 0;*!*/
+/*    !*width: 200px;*!*/
+/*    !*height: 200px;*!*/
+/*    margin: 30px;*/
+/*    !*border: 1px solid red;*!*/
 /*}*/
-/*.coffee tr:hover {*/
-/*    background: #ECECEC;*/
-/*    -webkit-transition: all 0.1s ease-in-out;*/
-/*    -moz-transition: all 0.1s ease-in-out;*/
-/*    transition: all 0.1s ease-in-out;*/
+/*.coffee{*/
+/*    border: 1px solid red;*/
+/*    border-radius: 10px;*/
+/*    width: 200px;*/
+/*    height: 100px;*/
+/*    margin-bottom: 20px;*/
 /*}*/
-/*.coffee td, .bordered th {*/
-/*    border-left: 1px solid #ccc;*/
-/*    border-top: 1px solid #ccc;*/
-/*    padding: 10px;*/
-/*    text-align: left;*/
+/*th, td {*/
+/*    border: 1px solid orange;*/
+/*    width: 200px;*/
+/*    height: 200px;*/
+/*    !*border-radius: 5px;*!*/
+/*    !*padding: 5px 10px;*!*/
+/*    padding: 100px;*/
 /*}*/
-/*.coffee th {*/
-/*    background-color: #ECECEC;*/
-/*    background-image: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#ECECEC));*/
-/*    background-image: -webkit-linear-gradient(top, #F8F8F8, #ECECEC);*/
-/*    background-image: -moz-linear-gradient(top, #F8F8F8, #ECECEC);*/
-/*    background-image: linear-gradient(top, #F8F8F8, #ECECEC);*/
-/*    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;*/
-/*    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;*/
-/*    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;*/
-/*    border-top: none;*/
-/*    text-shadow: 0 1px 0 rgba(255,255,255,.5);*/
+/*.col-left{*/
+/*    border: 1px solid green;*/
 /*}*/
-/*.coffee td:first-child, .bordered th:first-child {*/
-/*    border-left: none;*/
+/*.col-right{*/
+/*    border: 1px solid blue;*/
 /*}*/
-/*.coffee th:first-child {*/
-/*    -moz-border-radius: 6px 0 0 0;*/
-/*    -webkit-border-radius: 6px 0 0 0;*/
-/*    border-radius: 6px 0 0 0;*/
-/*}*/
-/*.coffee th:last-child {*/
-/*    -moz-border-radius: 0 6px 0 0;*/
-/*    -webkit-border-radius: 0 6px 0 0;*/
-/*    border-radius: 0 6px 0 0;*/
-/*}*/
-/*.coffee th:only-child{*/
-/*    -moz-border-radius: 6px 6px 0 0;*/
-/*    -webkit-border-radius: 6px 6px 0 0;*/
-/*    border-radius: 6px 6px 0 0;*/
-/*}*/
-/*.coffee tr:last-child td:first-child {*/
-/*    -moz-border-radius: 0 0 0 6px;*/
-/*    -webkit-border-radius: 0 0 0 6px;*/
-/*    border-radius: 0 0 0 6px;*/
-/*}*/
-/*.coffee tr:last-child td:last-child {*/
-/*    -moz-border-radius: 0 0 6px 0;*/
-/*    -webkit-border-radius: 0 0 6px 0;*/
-/*    border-radius: 0 0 6px 0;*/
-/*}*/
+
+/*!*.coffee {*!*/
+/*!*    border: solid #ccc 1px;*!*/
+/*!*    -moz-border-radius: 6px;*!*/
+/*!*    -webkit-border-radius: 6px;*!*/
+/*!*    border-radius: 6px;*!*/
+/*!*    -webkit-box-shadow: 0 1px 1px #ccc;*!*/
+/*!*    -moz-box-shadow: 0 1px 1px #ccc;*!*/
+/*!*    box-shadow: 0 1px 1px #ccc;*!*/
+/*!*}*!*/
+/*!*.coffee tr:hover {*!*/
+/*!*    background: #ECECEC;*!*/
+/*!*    -webkit-transition: all 0.1s ease-in-out;*!*/
+/*!*    -moz-transition: all 0.1s ease-in-out;*!*/
+/*!*    transition: all 0.1s ease-in-out;*!*/
+/*!*}*!*/
+/*!*.coffee td, .bordered th {*!*/
+/*!*    border-left: 1px solid #ccc;*!*/
+/*!*    border-top: 1px solid #ccc;*!*/
+/*!*    padding: 10px;*!*/
+/*!*    text-align: left;*!*/
+/*!*}*!*/
+/*!*.coffee th {*!*/
+/*!*    background-color: #ECECEC;*!*/
+/*!*    background-image: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#ECECEC));*!*/
+/*!*    background-image: -webkit-linear-gradient(top, #F8F8F8, #ECECEC);*!*/
+/*!*    background-image: -moz-linear-gradient(top, #F8F8F8, #ECECEC);*!*/
+/*!*    background-image: linear-gradient(top, #F8F8F8, #ECECEC);*!*/
+/*!*    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;*!*/
+/*!*    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;*!*/
+/*!*    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;*!*/
+/*!*    border-top: none;*!*/
+/*!*    text-shadow: 0 1px 0 rgba(255,255,255,.5);*!*/
+/*!*}*!*/
+/*!*.coffee td:first-child, .bordered th:first-child {*!*/
+/*!*    border-left: none;*!*/
+/*!*}*!*/
+/*!*.coffee th:first-child {*!*/
+/*!*    -moz-border-radius: 6px 0 0 0;*!*/
+/*!*    -webkit-border-radius: 6px 0 0 0;*!*/
+/*!*    border-radius: 6px 0 0 0;*!*/
+/*!*}*!*/
+/*!*.coffee th:last-child {*!*/
+/*!*    -moz-border-radius: 0 6px 0 0;*!*/
+/*!*    -webkit-border-radius: 0 6px 0 0;*!*/
+/*!*    border-radius: 0 6px 0 0;*!*/
+/*!*}*!*/
+/*!*.coffee th:only-child{*!*/
+/*!*    -moz-border-radius: 6px 6px 0 0;*!*/
+/*!*    -webkit-border-radius: 6px 6px 0 0;*!*/
+/*!*    border-radius: 6px 6px 0 0;*!*/
+/*!*}*!*/
+/*!*.coffee tr:last-child td:first-child {*!*/
+/*!*    -moz-border-radius: 0 0 0 6px;*!*/
+/*!*    -webkit-border-radius: 0 0 0 6px;*!*/
+/*!*    border-radius: 0 0 0 6px;*!*/
+/*!*}*!*/
+/*!*.coffee tr:last-child td:last-child {*!*/
+/*!*    -moz-border-radius: 0 0 6px 0;*!*/
+/*!*    -webkit-border-radius: 0 0 6px 0;*!*/
+/*!*    border-radius: 0 0 6px 0;*!*/
+/*!*}*!*/
