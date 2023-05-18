@@ -15,7 +15,7 @@ let coffees = [
     {id: 11, name: 'Espresso', roast: 'Dark', roasted: 'All'},
     {id: 12, name: 'Viennese', roast: 'Dark', roasted: 'All'},
     {id: 13, name: 'Italian', roast: 'Dark', roasted: 'All'},
-    {id: 14, name: 'French', roast: 'Dark', roasted: 'All'},
+    {id: 14, name: 'French', roast: 'Dark', roasted: 'All'}
 ];
 
 //THIS FUNCTION CREATES TABLE
@@ -31,8 +31,8 @@ let coffees = [
 //Tables are a little old school, you need to refactor the code so that each coffee is displayed in a div that contains a heading displaying the coffee name, and the type of roast in a paragraph. Don't display the ids, these are only for our application's internal use
 function renderCoffee(coffee){
     let html = '<div class="coffee">';
-        html += '<p>' + coffee.id +'</p>';
-        html += '<h1>' + coffee.name +'</h1>';
+        html += '<p>' + coffee.id + '</p>';
+        html += '<h1>' + coffee.name + '</h1>';
         html += '<p>' + coffee.name + '</p>';
         html += '</div>';
         return html;
@@ -41,7 +41,7 @@ function renderCoffee(coffee){
 //THIS FUNCTION ADDS COFFEE TO THE TABLE
 function renderCoffees(coffees) {
     let html = '';
-    for(let i = coffees.length - 1; i >= 0; i--) {
+    for(let i = 0; i <= coffees.length - 1; i++) {
         html += renderCoffee(coffees[i]);
     }
     return html;
@@ -68,17 +68,6 @@ function updateCoffees(e) {
     });
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
-function updateAllCoffees(e) {
-    e.preventDefault(); // don't submit the form, we just want to update the data
-    let selectedRoast = roastSelection.value;
-    let filteredCoffees = [];
-    coffees.forEach(function(coffee) {
-        if (coffee.roasted === selectedRoast) {
-            filteredCoffees.push(coffee);
-        }
-    });
-    tbody.innerHTML = renderCoffees(filteredCoffees);
-}
 
 // let submitButton = document.querySelector('#submit');
 
@@ -90,41 +79,3 @@ window.addEventListener("DOMContentLoaded", function(){
 });
 
 //This adds functionality to update the displayed coffee as the user types into the search box, or as soon as they select an option from the select.
-(document).ready(function() {
-    ("button").click(function() {
-        ("#Find").val("");
-        update(words)
-    });
-
-    let words = coffees.name;
-
-    let selection = $(".selection"),
-        input = $("input[type=search]"),
-        label = $("label");
-
-    function update(words) {
-        selection.html("");
-        $.each(words, function(i, word) {
-            selection.append("<option value='" + word + "'>" + word + "</option>");
-        });
-        label.text("Results:" + selection.find("option").length);
-    }
-
-    input.on("input", function(e) {
-        let val = e.target.value,
-            keys = val.split(/\s+/),
-            html = $.map(keys, function(key) {
-                return $.grep(words, function(word) {
-                    return word === key
-                        || word.slice(0, key.length) === key
-                        || word.indexOf(key) > -1
-                })
-            });
-
-        console.log(html);
-        update(html);
-    });
-
-    update(words);
-
-});
