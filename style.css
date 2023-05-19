@@ -1,122 +1,138 @@
+body{
+    background-color: black;
+    color: white;
+}
+/*Company logo gif*/
 .gif{
-    width: 80px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     margin-bottom: 40px;
 }
+/*navbar*/
 .navbar{
     font-family: "Corsiva Hebrew";
     font-size: 1.3rem;
 }
 .navbar-brand{
+    font-family: "Academy Engraved LET";
     font-size: 2rem;
 }
 .nav-item{
     margin-left: 30px;
 }
-/**{*/
-/*    box-sizing: border-box;*/
-/*}*/
-/*h1{*/
-/*    !*text-align: left;*!*/
-/*}*/
-/*p{*/
-/*    !*text-align: left;*!*/
-/*}*/
-/*.container{*/
-/*    border: 1px solid red;*/
-/*}*/
-/*table {*/
-/*    !*align-items: center;*!*/
-/*    !*border-collapse: collapse;*!*/
-/*    !*border-radius: 10px;*!*/
-/*    !*margin: 15px 0;*!*/
-/*    !*border-collapse: separate !important;*!*/
-/*    !*border-spacing: 0;*!*/
-/*    !*width: 200px;*!*/
-/*    !*height: 200px;*!*/
-/*    margin: 30px;*/
-/*    !*border: 1px solid red;*!*/
-/*}*/
-/*.coffee{*/
-/*    border: 1px solid red;*/
-/*    border-radius: 10px;*/
-/*    width: 200px;*/
-/*    height: 100px;*/
-/*    margin-bottom: 20px;*/
-/*}*/
-/*th, td {*/
-/*    border: 1px solid orange;*/
-/*    width: 200px;*/
-/*    height: 200px;*/
-/*    !*border-radius: 5px;*!*/
-/*    !*padding: 5px 10px;*!*/
-/*    padding: 100px;*/
-/*}*/
-/*.col-left{*/
-/*    border: 1px solid green;*/
-/*}*/
-/*.col-right{*/
-/*    border: 1px solid blue;*/
-/*}*/
+/*book a table*/
+.table{
+    font-family: "American Typewriter";
+    font-size: 1rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    width: 200px;
+    color: white;
+    text-decoration: none;
+    margin-right: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a:hover{
+    color: salmon;
+}
+/*shopping cart*/
+.shopping-cart{
+    width: 30px;
+    height: 30px;
+    margin: 0 20px 0 20px;
+}
+/*carousel*/
+.carousel-caption{
+    margin-bottom: 320px;
+    font-size: 3rem;
+}
+.carousel-caption > h1{
+    font-family: "Academy Engraved LET";
+    font-size: 6rem;
+}
+.carousel-caption > h3{
+    font-family: "American Typewriter";
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+/*coffee card*/
+.fresh-brew{
+    text-align: center;
+}
+.coffee{
+    font-family: "Academy Engraved LET";
+    border: 1px solid saddlebrown;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.coffee h5{
+    color: sandybrown;
+    padding-top: 5px;
+}
+.coffee p{
+    border: 1px solid rosybrown;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: saddlebrown;
+    color: blanchedalmond;
+    font-family: "American Typewriter";
+    font-size: 1rem;
+}
+.coffee p:hover{
+    cursor: pointer;
+    background-color: brown;
+}
+/*h4 headers below carousel*/
+h4{
+    font-family: "Academy Engraved LET";
+    color: saddlebrown;
+    font-size: 1.8rem;
+}
+/*image for coffee card*/
+.light-roast{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+/*GRADIENT BUTTON*/
+.gradient-buttons .btn {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.2) 49%, rgba(0,0,0,0.15) 51%, rgba(0,0,0,0.05));
+    background-repeat: repeat-x;
+}
+.card {
+    margin: 10px;
+    box-shadow: 0 5px 10px -2.5px;
+}
 
-/*!*.coffee {*!*/
-/*!*    border: solid #ccc 1px;*!*/
-/*!*    -moz-border-radius: 6px;*!*/
-/*!*    -webkit-border-radius: 6px;*!*/
-/*!*    border-radius: 6px;*!*/
-/*!*    -webkit-box-shadow: 0 1px 1px #ccc;*!*/
-/*!*    -moz-box-shadow: 0 1px 1px #ccc;*!*/
-/*!*    box-shadow: 0 1px 1px #ccc;*!*/
-/*!*}*!*/
-/*!*.coffee tr:hover {*!*/
-/*!*    background: #ECECEC;*!*/
-/*!*    -webkit-transition: all 0.1s ease-in-out;*!*/
-/*!*    -moz-transition: all 0.1s ease-in-out;*!*/
-/*!*    transition: all 0.1s ease-in-out;*!*/
-/*!*}*!*/
-/*!*.coffee td, .bordered th {*!*/
-/*!*    border-left: 1px solid #ccc;*!*/
-/*!*    border-top: 1px solid #ccc;*!*/
-/*!*    padding: 10px;*!*/
-/*!*    text-align: left;*!*/
-/*!*}*!*/
-/*!*.coffee th {*!*/
-/*!*    background-color: #ECECEC;*!*/
-/*!*    background-image: -webkit-gradient(linear, left top, left bottom, from(#F8F8F8), to(#ECECEC));*!*/
-/*!*    background-image: -webkit-linear-gradient(top, #F8F8F8, #ECECEC);*!*/
-/*!*    background-image: -moz-linear-gradient(top, #F8F8F8, #ECECEC);*!*/
-/*!*    background-image: linear-gradient(top, #F8F8F8, #ECECEC);*!*/
-/*!*    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;*!*/
-/*!*    -moz-box-shadow:0 1px 0 rgba(255,255,255,.8) inset;*!*/
-/*!*    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;*!*/
-/*!*    border-top: none;*!*/
-/*!*    text-shadow: 0 1px 0 rgba(255,255,255,.5);*!*/
-/*!*}*!*/
-/*!*.coffee td:first-child, .bordered th:first-child {*!*/
-/*!*    border-left: none;*!*/
-/*!*}*!*/
-/*!*.coffee th:first-child {*!*/
-/*!*    -moz-border-radius: 6px 0 0 0;*!*/
-/*!*    -webkit-border-radius: 6px 0 0 0;*!*/
-/*!*    border-radius: 6px 0 0 0;*!*/
-/*!*}*!*/
-/*!*.coffee th:last-child {*!*/
-/*!*    -moz-border-radius: 0 6px 0 0;*!*/
-/*!*    -webkit-border-radius: 0 6px 0 0;*!*/
-/*!*    border-radius: 0 6px 0 0;*!*/
-/*!*}*!*/
-/*!*.coffee th:only-child{*!*/
-/*!*    -moz-border-radius: 6px 6px 0 0;*!*/
-/*!*    -webkit-border-radius: 6px 6px 0 0;*!*/
-/*!*    border-radius: 6px 6px 0 0;*!*/
-/*!*}*!*/
-/*!*.coffee tr:last-child td:first-child {*!*/
-/*!*    -moz-border-radius: 0 0 0 6px;*!*/
-/*!*    -webkit-border-radius: 0 0 0 6px;*!*/
-/*!*    border-radius: 0 0 0 6px;*!*/
-/*!*}*!*/
-/*!*.coffee tr:last-child td:last-child {*!*/
-/*!*    -moz-border-radius: 0 0 6px 0;*!*/
-/*!*    -webkit-border-radius: 0 0 6px 0;*!*/
-/*!*    border-radius: 0 0 6px 0;*!*/
-/*!*}*!*/
+/*FOOTER*/
+.footer{
+    font-family: "Corsiva Hebrew";
+    color: white;
+}
+.footer a{
+    text-decoration: none;
+}
+.footer-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    margin-left: 60px;
+}
+.last-image{
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+}
