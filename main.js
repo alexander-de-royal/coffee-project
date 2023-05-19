@@ -87,10 +87,6 @@ addEventListener("DOMContentLoaded", function(){
     document.getElementById('roast-selection').addEventListener("change", updateCoffees)
 });
 
-// let userRoast = document.querySelector('#roast-selection-2');
-// let userCoffeeName = document.querySelector('#user-choice');
-// let userSubmitButton = document.querySelector('#user-submit');
-// userSubmitButton.addEventListener('click', userCoffeeSubmission);
 
 let userRoast = document.querySelector('#roast-selection-2');
 let addToDoButton = document.getElementById('user-submit');
@@ -98,11 +94,6 @@ let toDoContainer = document.getElementById('toDoContainer');
 let inputField = document.getElementById('input-Field');
 
 addToDoButton.addEventListener('click', function(){
-    // let paragraph = document.createElement('p')
-    // paragraph.classList.add('paragraph-styling');
-    // paragraph.innerText = inputField.value;
-    // toDoContainer.appendChild(paragraph);
-    // inputField.value = "";
         coffees.push({id: coffees.length + 1, name: inputField.value, roast: userRoast.value, roasted: "All", price: "$2.50"})
         // updateCoffees(coffees);
         tbody.innerHTML = renderCoffees(coffees);
