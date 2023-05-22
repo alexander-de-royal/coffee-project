@@ -8,6 +8,9 @@ body{
     height: 65px;
     margin-bottom: 40px;
 }
+#gif{
+    width: 80px;
+}
 /*navbar*/
 .navbar{
     font-family: "Corsiva Hebrew";
@@ -15,7 +18,11 @@ body{
 }
 .navbar-brand{
     font-family: "Academy Engraved LET";
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: saddlebrown;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 20px;
 }
 .nav-item{
     margin-left: 30px;
@@ -35,7 +42,7 @@ body{
     align-items: center;
 }
 a:hover{
-    color: salmon;
+    color: saddlebrown;
 }
 /*shopping cart*/
 .shopping-cart{
@@ -58,8 +65,14 @@ a:hover{
     font-weight: bold;
 }
 /*coffee card*/
+.coffee-card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 .fresh-brew{
     text-align: center;
+    font-size: 2.8rem;
 }
 .coffee{
     font-family: "Academy Engraved LET";
@@ -68,9 +81,19 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    padding: 20px;
+    border-radius: 20px;
+    /*margin: 1px;*/
+    padding: 10px;
+    width: 240px;
+}
+.col-8{
+    padding: 0;
+}
+.coffee h1{
+    color: blanchedalmond;
+    border-bottom: 1px solid saddlebrown;
+    /*width: 50px;*/
+
 }
 .coffee h5{
     color: sandybrown;
@@ -78,19 +101,22 @@ a:hover{
 }
 .coffee p{
     border: 1px solid rosybrown;
-    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
     width: 100px;
     height: 30px;
-    text-align: center;
     background-color: saddlebrown;
-    color: blanchedalmond;
+    color: black;
     font-family: "American Typewriter";
     font-size: 1rem;
 }
 .coffee p:hover{
     cursor: pointer;
-    background-color: brown;
+    background-color: chocolate;
 }
+
 /*h4 headers below carousel*/
 h4{
     font-family: "Academy Engraved LET";
@@ -107,14 +133,14 @@ h4{
 }
 /*GRADIENT BUTTON*/
 .gradient-buttons .btn {
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.2) 49%, rgba(0,0,0,0.15) 51%, rgba(0,0,0,0.05));
+    background-image: linear-gradient(to bottom, rgba(165,42,42,0.5), rgba(165,42,42,0.2) 49%, rgba(0,0,0,0.15) 51%, rgba(0,0,0,0.05));
     background-repeat: repeat-x;
 }
+
 .card {
     margin: 10px;
     box-shadow: 0 5px 10px -2.5px;
 }
-
 /*FOOTER*/
 .footer{
     font-family: "Corsiva Hebrew";
@@ -135,4 +161,8 @@ h4{
     width: 45px;
     height: 45px;
     margin-left: 20px;
+}
+main{
+    margin-left: 100px;
+    margin-right: 100px;
 }

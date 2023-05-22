@@ -2,47 +2,50 @@
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 let coffees = [
-    {id: 1, name: 'Light City', roast: 'Light', roasted: 'All', price: '$2.50',},
-    {id: 2, name: 'Half City', roast: 'Light', roasted: 'All', price: '$2.50'},
-    {id: 3, name: 'Cinnamon', roast: 'Light', roasted: 'All', price: '$2.50'},
-    {id: 4, name: 'City', roast: 'Medium', roasted: 'All', price: '$2.50'},
-    {id: 5, name: 'American', roast: 'Medium', roasted: 'All', price: '$2.50'},
-    {id: 6, name: 'Breakfast', roast: 'Medium', roasted: 'All', price: '$2.50'},
-    {id: 7, name: 'High', roast: 'Dark', roasted: 'All', price: '$2.50'},
-    {id: 8, name: 'Continental', roast: 'Dark', roasted: 'All', price: '$2.50'},
-    {id: 9, name: 'New Orleans', roast: 'Dark', roasted: 'All', price: '$2.50'},
-    {id: 10, name: 'European', roast: 'Dark', roasted: 'All', price: '$2.50'},
-    {id: 11, name: 'Espresso', roast: 'Dark', roasted: 'All', price: '$2.50'},
-    {id: 12, name: 'Viennese', roast: 'Dark', roasted: 'All', price: '$2.50'},
-    {id: 13, name: 'Italian', roast: 'Dark', roasted: 'All', price: '$2.50'},
-    {id: 14, name: 'French', roast: 'Dark', roasted: 'All', price: '$2.50'}
+    {id: 1, name: 'Light City', roast: 'Light', roasted: 'All', price: '$2.50', cart: 'Add to Cart'},
+    {id: 2, name: 'Half City', roast: 'Light', roasted: 'All', price: '$2.50', cart: 'Add to Cart'},
+    {id: 3, name: 'Cinnamon', roast: 'Light', roasted: 'All', price: '$2.50', cart: 'Add to Cart'},
+    {id: 4, name: 'City', roast: 'Medium', roasted: 'All', price: '$2.50', cart: 'Add to Cart'},
+    {id: 5, name: 'American', roast: 'Medium', roasted: 'All', price: '$2.50', cart: 'Add to Cart'},
+    {id: 6, name: 'Breakfast', roast: 'Medium', roasted: 'All', price: '$2.50', cart: 'Add to Cart'},
+    {id: 7, name: 'High', roast: 'Dark', roasted: 'All', price: '$2.50', cart: 'Add to Cart'},
+    {id: 8, name: 'Continental', roast: 'Dark', roasted: 'All', price: '$2.50', cart: 'Add to Cart'},
+    {id: 9, name: 'New Orleans', roast: 'Dark', roasted: 'All', price: '$2.50', cart: 'Add to Cart'},
+    {id: 10, name: 'European', roast: 'Dark', roasted: 'All', price: '$2.50', cart: 'Add to Cart'},
+    {id: 11, name: 'Espresso', roast: 'Dark', roasted: 'All', price: '$2.50', cart: 'Add to Cart'},
+    {id: 12, name: 'Viennese', roast: 'Dark', roasted: 'All', price: '$2.50', cart: 'Add to Cart'},
+    {id: 13, name: 'Italian', roast: 'Dark', roasted: 'All', price: '$2.50', cart: 'Add to Cart'},
+    {id: 14, name: 'French', roast: 'Dark', roasted: 'All', price: '$2.50', cart: 'Add to Cart'}
 ];
 
 //Tables are a little old school, you need to refactor the code so that each coffee is displayed in a div that contains a heading displaying the coffee name, and the type of roast in a paragraph. Don't display the ids, these are only for our application's internal use
 function renderCoffee(coffee){
 
     if(coffee.roast === 'Light'){
-        let html = '<div class="coffee col-6">';
+        let html = '<div class="coffee col-4 mx-1 mb-2">';
         html += '<h1>' + coffee.name + '</h1>';
-        html += '<img class="light-roast" src="images/light.jpeg" alt="light coffee"></img>';
+        html += '<img class="light-roast" src="images/image-12.png" alt="light coffee"></img>';
         html += '<h5>' + coffee.roast + '</h5>';
-        html += '<p>' + coffee.price + '</p>';
+        html += '<h5>' + coffee.price + '</h5>';
+        html += '<p>' + coffee.cart + '</p>';
         html += '</div>';
         return html;
     } else if (coffee.roast === 'Medium'){
-        let html = '<div class="coffee col-6">';
+        let html = '<div class="coffee col-4 mx-1 mb-2">';
         html += '<h1>' + coffee.name + '</h1>';
-        html += '<img class="light-roast" src="images/medium.jpeg" alt="light coffee"></img>';
+        html += '<img class="light-roast" src="images/image-11.png" alt="light coffee"></img>';
         html += '<h5>' + coffee.roast + '</h5>';
-        html += '<p>' + coffee.price + '</p>';
+        html += '<h5>' + coffee.price + '</h5>';
+        html += '<p>' + coffee.cart + '</p>';
         html += '</div>';
         return html;
     } else if (coffee.roast === 'Dark'){
-        let html = '<div class="coffee col-6">';
+        let html = '<div class="coffee col-4 mx-1 mb-2">';
         html += '<h1>' + coffee.name + '</h1>';
-        html += '<img class="light-roast" src="images/dark.jpeg" alt="light coffee"></img>';
+        html += '<img class="light-roast" src="images/image-13.png" alt="light coffee"></img>';
         html += '<h5>' + coffee.roast + '</h5>';
-        html += '<p>' + coffee.price + '</p>';
+        html += '<h5>' + coffee.price + '</h5>';
+        html += '<p>' + coffee.cart + '</p>';
         html += '</div>';
         return html;
     }
@@ -94,7 +97,7 @@ let toDoContainer = document.getElementById('toDoContainer');
 let inputField = document.getElementById('input-Field');
 
 addToDoButton.addEventListener('click', function(){
-        coffees.push({id: coffees.length + 1, name: inputField.value, roast: userRoast.value, roasted: "All", price: "$2.50"})
+        coffees.push({id: coffees.length + 1, name: inputField.value, roast: userRoast.value, roasted: "All", price: "$2.50", cart: 'Add to Cart'})
         // updateCoffees(coffees);
         tbody.innerHTML = renderCoffees(coffees);
 

@@ -11,14 +11,14 @@
 <!--    CSS LINK-->
     <link rel="stylesheet" href="style.css">
 
-    <title>Coffee Hause</title>
+    <title>Cafe' Hause</title>
 </head>
 
 <body>
 <header>
     <nav class="navbar navbar-dark bg-black navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid"><img class="gif" src="images/image-4.gif" alt="">
-            <a class="navbar-brand" href="#">Coffee Hause</a>
+            <a class="navbar-brand" href="#">Cafe' Hause</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -58,7 +58,7 @@
             <div class="carousel-item active">
                 <img src="images/image-3.jpg" class="d-block w-100 carousel-image" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h1>Coffee Hause</h1>
+                    <h1>Cafe' Hause</h1>
                     <h3>Some representative placeholder content for the first slide.</h3>
                 </div>
             </div>
@@ -89,24 +89,22 @@
 </header>
 
 <main>
-    <div class="row"> </div>
-    <div class="container">
         <div class="row">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-7 col-left">
-                        <div class="col"><h4 class="fresh-brew mb-4">Fresh Brewed Coffee</h4></div>
+<!--                    COLUMN LEFT-->
+                    <div class="col-8 col-left">
+                        <div class="col"><h4 class="fresh-brew mb-4">------- Fresh Brewed <img class="gif" src="images/image-4.gif" alt="">Coffee -------</h4></div>
                         <div class="container">
-                            <div class="row">
-                                <table class="coffee-card">
-                                    <tbody id="coffees"></tbody>
-                                </table>
-                            </div>
+                                <div class="coffee-card">
+                                    <div class="row" id="coffees"></div>
+                                </div>
                         </div>
-
                     </div>
-                    <div class="col-5 col-right">
-                        <h4 mb-4>Please select from the menu</h4>
+<!--                        COLUMN RIGHT-->
+                    <div class="col-4 col-right">
+                        <h4 class="fresh-brew mt-4 mb-5">--- Order Here ----</h4>
+                        <h4 mb-5>Select from the menu !</h4>
                         <form class="form-inline mb-5">
                             <label for="roast-selection" class="my-1 mr-2 mb-2">Preference</label>
                             <select id="roast-selection" class="form-select form-select-md mb-3" aria-label=".form-select-sm example">
@@ -120,10 +118,10 @@
                                 <input id="search-coffee" type="search" class="form-control" placeholder="What do you want?" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                             <div class="card-body gradient-buttons d-grid gap-2">
-                                <button type="button" class="btn btn-secondary">Add to Cart</button>
+                                <button type="button" class="btn btn-dark">Add to Cart</button>
                             </div>
                         </form>
-                        <h4>Would you like to add more coffee?</h4>
+                        <h4>Make your own coffee !</h4>
                         <form class="form-inline">
                             <label for="roast-selection-2" class="my-1 mr-2 mb-2">Preference</label>
                             <select id="roast-selection-2" class="form-select form-select-md mb-3" aria-label=".form-select-sm example">
@@ -136,19 +134,37 @@
                                     <input id="input-Field" type="text" class="form-control" placeholder="Add a name">
                                 </div>
                                 <div class="card-body gradient-buttons d-grid gap-2">
-                                    <button type="button" class="btn btn-dark" id="user-submit">Add to Menu</button>
+                                    <button type="button" class="btn btn-dark mb-5" id="user-submit">Add to Menu</button>
                                 </div>
-
                             <div class="container">
                                 <div class="to-dos" id="toDoContainer">
                                 </div>
                             </div>
                         </form>
+<!--                        <h4>Would you like to add more coffee?</h4>-->
+<!--                        <form class="form-inline">-->
+<!--                            <label for="roast-selection-3" class="my-1 mr-2 mb-2">Preference</label>-->
+<!--                            <select id="roast-selection-3" class="form-select form-select-md mb-3" aria-label=".form-select-sm example">-->
+<!--                                <option class="light">Light</option>-->
+<!--                                <option class="medium">Medium</option>-->
+<!--                                <option class="dark">Dark</option>-->
+<!--                            </select>-->
+<!--                            <label class="my-1 mr-2 mb-2" for="input-Field">Name</label>-->
+<!--                            <div class="input-group mb-4">-->
+<!--                                <input id="input-Field-1" type="text" class="form-control" placeholder="Add a name">-->
+<!--                            </div>-->
+<!--                            <div class="card-body gradient-buttons d-grid gap-2">-->
+<!--                                <button type="button" class="btn btn-dark" id="user-submit1">Add to Menu</button>-->
+<!--                            </div>-->
+<!--                            <div class="container">-->
+<!--                                <div class="to-dos" id="toDoContainer1">-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </form>-->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </main>
 
 <footer>
